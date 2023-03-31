@@ -1,0 +1,17 @@
+.header {
+    font-family: Acme, Arial, Helvetica, sans-serif;
+    background-color: #7f11ab;
+    color: #131332;
+  }
+
+#intro {
+  background-color: blanchedalmond;
+  color: blue;
+  margin: 10px;
+  padding-right: 0.833em; /* 20px 0.833em @ 24px */
+}
+
+#login {
+  background-color: rgb(221, 178, 218);
+  color: blue;
+}
