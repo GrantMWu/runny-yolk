@@ -6,25 +6,29 @@
 
 {% block main %}
 
-<div class="d-flex flex-wrap">
-    <section class="p-2" id="intro">
-        <p>
-            Do an introduction here
-        </p>
-    </section>
-
-    <form action="/login" method="post">
-        <section class=p-2 id="login">
-            <h2>login to get your recipe</h2>
-            <div class="mb-3">
-                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
-            </div>
-            <div class="mb-3">
-                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+<div class="bg-image">      
+    <div class="form-outline content back div-center mb-4">
+        <form action="/login" method="post">
+            <h3>Login</h3>
+            <label for="InputUserName">User name</label>
+            
+            <div class="input-group mb-3">
+                <input class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+            </div>  
+                
+            <label for="InputPassword">Password</label>
+                
+            <div class="input-group mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">    
             </div>
             <button class="btn btn-primary" type="submit">Log In</button>
-        </section>
-    </form>
+
+            
+            <h5> -- Haven't Creted an Accont Yet? -- </h5>
+            
+            <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+    </div>
 </div>
 
 {% endblock %}
