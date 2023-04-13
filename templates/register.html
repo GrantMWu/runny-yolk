@@ -1,15 +1,15 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Login
+    Register
 {% endblock %}
 
 {% block main %}
 
 <div class="bg-image img-fluid">      
     <div class="form-outline content back div-center pb-2 rounded shadow-sm">
-        <form action="/login" method="post">
-            <h3>Login</h3>
+        <form action="/register" method="post">
+            <h3>Register</h3>
             <label for="InputUserName">User name</label>
             
             <div class="input-group mb-3">
@@ -21,10 +21,9 @@
             <div class="input-group mb-3">
                 <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">    
             </div>
-            <button class="btn btn-primary" type="submit">Log In</button>
-
-            
-            <p class="mt-5"> -- Haven't Created an Accont Yet? -- </p>
+            <div class="input-group mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Confirm Password" type="password">    
+            </div>
             
             <button class="btn btn-primary my-3" type="submit">Register</button>
         </form>
